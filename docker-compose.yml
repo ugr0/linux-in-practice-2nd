@@ -1,0 +1,10 @@
+version: '3'
+services:
+    env:
+        command: /bin/bash
+        build:
+            context: .
+            dockerfile: ./Dockerfile
+        volumes:
+          - ./src:/home/yujiro/workdir
+        tty: true
